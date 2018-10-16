@@ -1,0 +1,14 @@
+# mysql
+spring:
+    # 环境 dev|test|pro
+    profiles:
+        active: dev
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+#        driverClassName: com.mysql.jdbc.Driver
+
+# Mybatis配置
+mybatis:
+#    mapperLocations: classpath:mapper/**/*.xml,mapper-sales/**/*.xml,mapper-vendor/**/*.xml,mapper-wo/**/*.xml
+    configLocation: classpath:mybatis.xml
+
